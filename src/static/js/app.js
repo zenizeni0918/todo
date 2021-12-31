@@ -4,6 +4,7 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
+                    <p class="text-center">ToDo App by Tomoaki Hirono</p>
                     <TodoListCard />
                 </Col>
             </Row>
@@ -52,9 +53,8 @@ function TodoListCard() {
     return (
         <React.Fragment>
             <AddItemForm onNewItem={onNewItem} />
-            <p className="text-center">test</p>
             {items.length === 0 && (
-                <p className="text-center">No items yet! Add one above!!</p>
+                <p className="text-center">No items yet! Add one above!</p>
             )}
             {items.map(item => (
                 <ItemDisplay
