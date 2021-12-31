@@ -2,8 +2,8 @@ function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
-             <div>todo list</div> 
             <Row>
+        <p className="text-center">test</p>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
                 </Col>
@@ -52,6 +52,7 @@ function TodoListCard() {
 
     return (
         <React.Fragment>
+        <p className="text-center">test</p>
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
                 <p className="text-center">No items yet! Add one above!</p>
