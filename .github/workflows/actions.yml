@@ -15,7 +15,6 @@ jobs:
         run: npm test
         env: 
           SQLITE_DB_LOCATION: /tmp/todo.db
-	  
 build_and_push:
  runs-on: ubuntu-latest
  steps:
